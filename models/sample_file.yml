@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: sample_file
+    database: "{{ env_var('DBT_RAW', '') }}"
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        description: This is a customers table
